@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS sample
 (id int, desc string, name varchar(50), category int, price1 decimal, price2 decimal, vat decimal, region varchar (100), department varchar (100), ratio decimal) 
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 stored as textfile;
-LOAD DATA LOCAL INPATH '/tmp/sample.csv' OVERWRITE INTO TABLE sample;
+LOAD DATA INPATH '/tmp/sample.csv' OVERWRITE INTO TABLE sample;
 
 
 CREATE TABLE IF NOT EXISTS sample_orc
