@@ -16,6 +16,3 @@ export BEELINE='beeline -u "jdbc:hive2://blablablabla"'
 ```
 ./load_10000.sh
 ```
-
-Notes:
-1. The scripts uses 'LOAD DATA LOCAL INPATH', so it relies on the fact that you're working on hiveserver2's machine.
