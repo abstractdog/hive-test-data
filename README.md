@@ -6,7 +6,7 @@ Original data source: https://www.sample-videos.com/csv/
 Usage:
 1. Clone this repo to hiveserver2's machine
 ```
-git clone https://github.com/abstractdog/hive-test-data.git
+git clone git@github.com:abstractdog/hive-test-data.git
 ```
 2. Set a valid beeline connection string to variable BEELINE
 ```
