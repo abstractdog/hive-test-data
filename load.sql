@@ -1,3 +1,5 @@
+set hive.exec.max.dynamic.partitions.pernode=1000;
+
 CREATE TABLE IF NOT EXISTS sample_txt_tmp
 (id int, desc string, name varchar(50), category int, price1 float, price2 double, vat decimal, region varchar (100), department varchar (100), ratio decimal) 
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
